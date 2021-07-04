@@ -2,7 +2,7 @@
 File: searchengine.py
 ---------------------
 This is a text based version of a search engine , which when provided directory name for the dataset
-will enable us to run the search engine and provide results for our search queries :)
+will enable us to run the search engine and provide results for our search queries from that dataset :)
 """
 
 
@@ -71,14 +71,6 @@ def common(list1, list2):
     """
     This function is passed two lists and returns a new list containing
     those elements that appear in both of the lists passed in.
-    >>> common(['a'], ['a'])
-    ['a']
-    >>> common(['a', 'b', 'c'], ['x', 'a', 'z', 'c'])
-    ['a', 'c']
-    >>> common(['a', 'b', 'c'], ['x', 'y', 'z'])
-    []
-    >>> common(['a', 'a', 'b'], ['a', 'a', 'x'])
-    ['a']
     """
     common_list = []
     temp_list = list1.copy()
