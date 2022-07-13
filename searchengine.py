@@ -99,9 +99,9 @@ def do_searches(index, file_titles):
         # display query results
         print("Results for query '" + query + "':")
         if results:                             # check for non-empty results list
-            for i in range(len(results)):
-                title = file_titles[results[i]]
-                print(str(i + 1) + ".  Title: " + title + ",  File: " + results[i])
+            for i, item in enumerate(results):
+                title = file_titles[item]
+                print(str(i + 1) + ".  Title: " + title + ",  File: " + item)
         else:
             print("No results match that query.")
 
